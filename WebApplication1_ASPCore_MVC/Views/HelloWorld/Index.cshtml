@@ -1,0 +1,13 @@
+﻿@model List< WebApplication1_ASPCore_MVC.Models.DogViewModel >
+
+
+<h1>Hello Wolrd</h1>
+<p> This is a index page dedicated to just say "Hello World"</p>    
+
+<ul>
+@foreach(var dog in Model)
+{
+    <li>@dog.Name (@dog.Age)</li>
+    
+}
+</ul>
